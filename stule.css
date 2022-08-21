@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: aquamarine;
+   
+}
+
+.logo-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    line-height: 1.5;
+}
+
+
+ul {
+    
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+} 
+
+.header {
+ display: flex;
+ flex-direction:column;
+ padding: 20px;
+ height:calc(100vh - 40px);
+ background-image: url(https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp);
+ background-repeat: no-repeat;
+ background-size: cover ;
+ background-position: 50%;
+ background-attachment: fixed;
+} 
+
+
+header::after{
+    content: "";
+    background: #0c3632;
+    position: absolute;
+    opacity: .85;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .25s ease;
+}
+
+
+
+
+
+.nav-list {
+    display: flex;
+    align-items: center ;
+
+
+
+}
+
+.nav-list li {
+    margin-left: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width: calc(100% - 40px);
+
+}
+
+.nav-list-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list-link::after {
+    content: "";
+    background: #17baaa;
+    height:2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+     transform: scale(0);
+    transition: all .25s ease;
+}
+
+
+.nav-list-link:hover {
+    color: #17baaa;
+    transition: all .25s ease;
+    
+}
+
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
+    color: white
+}
+
+.heart-icon {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.nav-list li:last-of-type a {
+    display:flex;
+    align-items: center;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 10px;
+    color: rgb(242, 234, 234);
+    background-color: #dd3d53;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all .25s ease;
+}
+
+
+.nav-list li:last-child a:hover {
+    background-color:#c9233a;
+} 
+
+.nav-list li:last-of-type {
+    padding-right: 20px;
+
+}
+
+.nav-list li:last-child a svg {
+    width: 1em;
+   
+}
+
+
+
+.prowision{
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+   
+    
+   
+}
+.Text-1 {
+    color: white;
+font-size: 56px;
+line-height: 84px;
+}
+
+
+.Text-2 {
+color: #17baaa;  
+}
+
+.diznatys{
+    display: block ;
+background-color: #17baaa;
+color: white;
+font-size: .875rem;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+border: 0;
+box-sizing: border-box;
+outline: none;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+max-width: 100%;
+min-height: 40px;
+transition: all .25s ease;
+border-radius: 4px;
+}
+ 
+.diznatys:hover {
+    background-color: #044a43;
+}
+
+.bage {
+    width: 100%;
+    padding: 40px 0;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bage-inner {
+   margin: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+   box-sizing: border-box;
+   max-width: 1280px;
+   width: 100%;
+   text-align: right; 
+   pointer-events: none;
+}
+
+
+
+.nav-toggle {
+    color: white;
+    font-size: 2rem;
+}
+
+.burger-icon{
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-toggle{
+        display: none;
+    }
+    
+    
+    .burger-icon {
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-list {
+        display: none;
+    }
+}
